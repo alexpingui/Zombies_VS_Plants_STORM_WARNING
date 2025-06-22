@@ -1,0 +1,80 @@
+[gd_scene load_steps=13 format=3 uid="uid://d06hd7lyonpcu"]
+
+[ext_resource type="Texture2D" uid="uid://vptlii4lb1s1" path="res://assets/UI/Tile/Parke/parke.png" id="1_0e48y"]
+[ext_resource type="Script" uid="uid://drqdeixotf83r" path="res://Managers/GameManager.cs" id="1_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://ca7jria3ndxj5" path="res://assets/UI/House/house.png" id="1_wtcfe"]
+[ext_resource type="Texture2D" uid="uid://b4el7twiha8bl" path="res://assets/UI/Tile/Grounds.png" id="3_epypp"]
+[ext_resource type="Texture2D" uid="uid://8l73ku7orpgg" path="res://assets/UI/GroundEdge/groundie.png" id="3_rj586"]
+[ext_resource type="Texture2D" uid="uid://be1ltr7jccyuq" path="res://assets/UI/Fence/fence.png" id="5_4d7sh"]
+[ext_resource type="Script" uid="uid://fk0qle7n3enc" path="res://Grounds.cs" id="5_ir8iy"]
+[ext_resource type="Texture2D" uid="uid://vfg1rpdmqrk1" path="res://assets/UI/welcomeCarpet/carpet.png" id="6_ir8iy"]
+[ext_resource type="PackedScene" uid="uid://dsovmj6k263oa" path="res://ZombieNodes/DefaultZombie.tscn" id="10_ir8iy"]
+[ext_resource type="PackedScene" uid="uid://dhjjel1wip0gf" path="res://PlantNodes/SupportPlants/Nut.tscn" id="11_hqns4"]
+[ext_resource type="PackedScene" uid="uid://buyrliliivtif" path="res://UIElements/Inventory/inventory.tscn" id="12_0h7mo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
+atlas = ExtResource("3_rj586")
+region = Rect2(0, 0, 37, 160)
+
+[node name="Game" type="Node2D"]
+texture_filter = 3
+script = ExtResource("1_ir8iy")
+
+[node name="Map" type="Node2D" parent="."]
+texture_filter = 3
+
+[node name="Parke" type="Sprite2D" parent="Map"]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(897, 417)
+scale = Vector2(4, 4)
+texture = ExtResource("1_0e48y")
+region_enabled = true
+region_rect = Rect2(0, 25, 448, 208.33)
+
+[node name="Groundie" type="Sprite2D" parent="Map"]
+texture_repeat = 2
+position = Vector2(1480, 473)
+scale = Vector2(4, 4)
+texture = SubResource("AtlasTexture_hqns4")
+
+[node name="Grounds" type="Sprite2D" parent="Map"]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(387, 155)
+scale = Vector2(4, 4)
+texture = ExtResource("3_epypp")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 288, 160)
+script = ExtResource("5_ir8iy")
+
+[node name="Fence" type="Sprite2D" parent="Map"]
+texture_filter = 3
+texture_repeat = 2
+position = Vector2(954, 86)
+scale = Vector2(4, 4)
+texture = ExtResource("5_4d7sh")
+region_enabled = true
+region_rect = Rect2(0, 0, 288, 32)
+
+[node name="Carpet" type="Sprite2D" parent="Map"]
+texture_filter = 3
+position = Vector2(268, 465)
+rotation = -1.5708
+scale = Vector2(2, 2)
+texture = ExtResource("6_ir8iy")
+
+[node name="House" type="Sprite2D" parent="Map"]
+texture_filter = 3
+position = Vector2(-167, 462)
+scale = Vector2(4.54885, 4.54885)
+texture = ExtResource("1_wtcfe")
+
+[node name="Inventory" parent="." instance=ExtResource("12_0h7mo")]
+
+[node name="Nut" parent="." instance=ExtResource("11_hqns4")]
+position = Vector2(1329, 318)
+
+[node name="DefaultZombie" parent="." instance=ExtResource("10_ir8iy")]
+position = Vector2(1529, 290)

@@ -1,0 +1,175 @@
+[gd_scene load_steps=10 format=3 uid="uid://0q257htvd4lk"]
+
+[ext_resource type="PackedScene" uid="uid://dm8qnxygg332x" path="res://PlantNodes/Plant.tscn" id="1_phbjr"]
+[ext_resource type="Script" uid="uid://bco0r00g17p06" path="res://PlantNodes/SupportPlants/SunFlower.cs" id="2_6lv8e"]
+[ext_resource type="Texture2D" uid="uid://c02ttuov3tapd" path="res://assets/Plants/Sunflower/SunflowerSprite.png" id="2_qv15j"]
+[ext_resource type="Texture2D" uid="uid://bcq66afuqks6k" path="res://assets/Plants/Sunflower/SunflowerSunning.png" id="3_6lv8e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qv15j"]
+size = Vector2(19, 28)
+
+[sub_resource type="Animation" id="Animation_tm82y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2DSunning:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2DSunning:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_ms1y2"]
+resource_name = "default"
+length = 1.5
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2DSunning:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_ob08n"]
+resource_name = "sunning"
+length = 1.4
+step = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2DSunning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.8, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2DSunning:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.4),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Sunning"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hm8sk"]
+_data = {
+&"RESET": SubResource("Animation_tm82y"),
+&"default": SubResource("Animation_ms1y2"),
+&"sunning": SubResource("Animation_ob08n")
+}
+
+[node name="SunFlower" instance=ExtResource("1_phbjr")]
+collision_layer = 2
+collision_mask = 16
+script = ExtResource("2_6lv8e")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(-0.5, 1.5)
+shape = SubResource("RectangleShape2D_qv15j")
+
+[node name="AnimationPlayer" parent="." index="1"]
+libraries = {
+&"": SubResource("AnimationLibrary_hm8sk")
+}
+autoplay = "default"
+
+[node name="Sprite2DSunning" type="Sprite2D" parent="." index="2"]
+texture = ExtResource("3_6lv8e")
+hframes = 7
+
+[node name="Sprite2D" parent="." index="3"]
+texture = ExtResource("2_qv15j")
+hframes = 5

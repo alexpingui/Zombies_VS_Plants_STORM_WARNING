@@ -1,0 +1,112 @@
+[gd_scene load_steps=9 format=3 uid="uid://bi0l6pme6n7en"]
+
+[ext_resource type="PackedScene" uid="uid://dm8qnxygg332x" path="res://PlantNodes/Plant.tscn" id="1_yfqr0"]
+[ext_resource type="Texture2D" uid="uid://c3lddkpp3omir" path="res://assets/Plants/PeaShooter/PeashooterSprite.png" id="2_utksf"]
+[ext_resource type="Script" uid="uid://gwaepcnwbv27" path="res://PlantNodes/ShootPlant/ShootingPlants/PeaShooter.cs" id="2_yw37r"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_utksf"]
+radius = 10.75
+height = 33.5
+
+[sub_resource type="Animation" id="Animation_x2tiv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_yw37r"]
+resource_name = "Shoot"
+length = 1.4
+step = 0.01
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/path = NodePath("Sprite2D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"values": []
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16551, 0.323497, 0.477723, 0.639472, 0.797459, 0.962969, 1.12848, 1.29775),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11, 12, 13, 14, 15, 16]
+}
+tracks/2/type = "method"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.97),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"Shoot"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_mmy01"]
+resource_name = "default"
+length = 1.1
+loop_mode = 1
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16, 0.32, 0.48, 0.64, 0.8, 0.96),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b2j61"]
+_data = {
+&"RESET": SubResource("Animation_x2tiv"),
+&"Shoot": SubResource("Animation_yw37r"),
+&"default": SubResource("Animation_mmy01")
+}
+
+[node name="PeaShooter" instance=ExtResource("1_yfqr0")]
+collision_layer = 2
+collision_mask = 16
+script = ExtResource("2_yw37r")
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(-0.75, 2.75)
+shape = SubResource("CapsuleShape2D_utksf")
+
+[node name="AnimationPlayer" parent="." index="1"]
+libraries = {
+&"": SubResource("AnimationLibrary_b2j61")
+}
+autoplay = "default"
+
+[node name="Sprite2D" parent="." index="2"]
+texture = ExtResource("2_utksf")
+hframes = 17
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="AnimationFinished"]

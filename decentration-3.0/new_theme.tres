@@ -1,0 +1,9 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://d3h62vky6kr7y"]
+
+[ext_resource type="FontFile" uid="uid://cghruot6obfuf" path="res://Fonts/timesnewromanpsmt.ttf" id="1_amlv4"]
+
+[resource]
+default_font = ExtResource("1_amlv4")
+default_font_size = 5
+Label/font_sizes/font_size = 5
+Label/fonts/font = ExtResource("1_amlv4")

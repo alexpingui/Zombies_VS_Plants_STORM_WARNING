@@ -1,0 +1,93 @@
+[gd_scene load_steps=6 format=3 uid="uid://buyrliliivtif"]
+
+[ext_resource type="Texture2D" uid="uid://i611momc1yle" path="res://assets/UI/Inventory/InventoryForSevenCards.png" id="1_je1fl"]
+[ext_resource type="Script" uid="uid://b16pd0dnddik1" path="res://UIElements/Inventory/Inventory.cs" id="1_ttow3"]
+[ext_resource type="Texture2D" uid="uid://b2qya1k1wopep" path="res://assets/Plants/Sunflower/Sun.png" id="3_a4ral"]
+[ext_resource type="Texture2D" uid="uid://cmja4jcoelffh" path="res://assets/UI/Shovel/shovel.png" id="5_puxlw"]
+[ext_resource type="Script" uid="uid://devyvouv8ywar" path="res://UIElements/Inventory/ShovelTextureButton.cs" id="5_qvvco"]
+
+[node name="Inventory" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 286.0
+offset_bottom = 32.0
+scale = Vector2(4, 4)
+script = ExtResource("1_ttow3")
+
+[node name="InventorySprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_je1fl")
+centered = false
+
+[node name="MarginContainer2" type="MarginContainer" parent="InventorySprite"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 144
+
+[node name="VBoxContainer" type="VBoxContainer" parent="InventorySprite/MarginContainer2"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Control" type="Control" parent="InventorySprite/MarginContainer2/VBoxContainer"]
+custom_minimum_size = Vector2(0, 3)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="InventorySprite/MarginContainer2/VBoxContainer"]
+custom_minimum_size = Vector2(18, 18)
+layout_mode = 2
+texture = ExtResource("3_a4ral")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SunsQuantityLabel" type="Label" parent="InventorySprite/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 7
+text = "50"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShovelMarginContainer" type="MarginContainer" parent="InventorySprite"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 6
+
+[node name="ShovelTextureButton" type="TextureButton" parent="InventorySprite/ShovelMarginContainer"]
+z_index = 20
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+size_flags_horizontal = 8
+mouse_default_cursor_shape = 2
+action_mode = 0
+texture_normal = ExtResource("5_puxlw")
+ignore_texture_size = true
+stretch_mode = 4
+script = ExtResource("5_qvvco")
+
+[node name="MarginContainer" type="MarginContainer" parent="InventorySprite"]
+z_index = 10
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 21
+theme_override_constants/margin_bottom = 3
+
+[node name="PlantCardsHBoxContainer" type="HBoxContainer" parent="InventorySprite/MarginContainer"]
+z_index = 10
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[connection signal="pressed" from="InventorySprite/ShovelMarginContainer/ShovelTextureButton" to="." method="_Pressed"]

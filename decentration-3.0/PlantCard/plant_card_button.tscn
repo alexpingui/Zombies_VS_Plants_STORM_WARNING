@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpjd5fetrvj8f"]
+
+[ext_resource type="Script" uid="uid://cig4fngkhyctu" path="res://PlantCard/PlantCard.cs" id="1_j18r5"]
+
+[node name="PlantCardButton" type="Button"]
+visibility_layer = 1023
+z_index = 1000
+texture_filter = 3
+custom_minimum_size = Vector2(17, 26)
+offset_right = 32.0
+offset_bottom = 48.0
+mouse_default_cursor_shape = 2
+script = ExtResource("1_j18r5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+expand_mode = 1
+stretch_mode = 4
+
+[connection signal="pressed" from="." to="." method="_Pressed"]

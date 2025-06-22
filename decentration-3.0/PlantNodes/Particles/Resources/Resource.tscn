@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cgtw26wneeg4n"]
+
+[ext_resource type="PackedScene" uid="uid://db684j5f5xayp" path="res://PlantNodes/Particles/Particle.tscn" id="1_rxu0p"]
+[ext_resource type="Script" uid="uid://ubp0kcuv28sw" path="res://PlantNodes/Particles/Resources/Resource.cs" id="2_srb4g"]
+
+[node name="Resource" instance=ExtResource("1_rxu0p")]
+scale = Vector2(4, 4)
+script = ExtResource("2_srb4g")
+
+[connection signal="input_event" from="." to="." method="OnInputEvent"]

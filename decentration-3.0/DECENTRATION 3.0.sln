@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DECENTRATION 3.0", "DECENTRATION 3.0.csproj", "{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PVZModel", "..\..\..\PVZModelImport\PVZModel.csproj", "{8E8A7BB0-1F25-943F-C049-176969202D39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		ExportDebug|Any CPU = ExportDebug|Any CPU
+		ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+		{8E8A7BB0-1F25-943F-C049-176969202D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8A7BB0-1F25-943F-C049-176969202D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8A7BB0-1F25-943F-C049-176969202D39}.ExportDebug|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8A7BB0-1F25-943F-C049-176969202D39}.ExportDebug|Any CPU.Build.0 = Release|Any CPU
+		{8E8A7BB0-1F25-943F-C049-176969202D39}.ExportRelease|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8A7BB0-1F25-943F-C049-176969202D39}.ExportRelease|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

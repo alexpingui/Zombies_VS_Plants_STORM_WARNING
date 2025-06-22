@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://5e3bhi0cbrx4"]
+
+[ext_resource type="PackedScene" uid="uid://cgtw26wneeg4n" path="res://PlantNodes/Particles/Resources/Resource.tscn" id="1_axldi"]
+[ext_resource type="Texture2D" uid="uid://b2qya1k1wopep" path="res://assets/Plants/Sunflower/Sun.png" id="2_1ds01"]
+[ext_resource type="Script" uid="uid://ciybm6nflhkpu" path="res://PlantNodes/Particles/Resources/Sun.cs" id="2_7omwv"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7omwv"]
+radius = 11.25
+
+[node name="Sun" instance=ExtResource("1_axldi")]
+script = ExtResource("2_7omwv")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CircleShape2D_7omwv")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_1ds01")

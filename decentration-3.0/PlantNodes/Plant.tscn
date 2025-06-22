@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm8qnxygg332x"]
+
+[ext_resource type="Script" uid="uid://dyyhx4naipamu" path="res://PlantNodes/BasePlant/Plant.cs" id="1_7y4r0"]
+
+[node name="Plant" type="Area2D"]
+scale = Vector2(4, 4)
+script = ExtResource("1_7y4r0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

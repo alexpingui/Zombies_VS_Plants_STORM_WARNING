@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://db684j5f5xayp"]
+
+[ext_resource type="Script" uid="uid://brtnf7116xytw" path="res://PlantNodes/Particles/Particle.cs" id="1_bsmj3"]
+
+[node name="Particle" type="Area2D"]
+script = ExtResource("1_bsmj3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

@@ -1,0 +1,103 @@
+[gd_scene load_steps=10 format=3 uid="uid://dhjjel1wip0gf"]
+
+[ext_resource type="PackedScene" uid="uid://dm8qnxygg332x" path="res://PlantNodes/Plant.tscn" id="1_6uvci"]
+[ext_resource type="Script" uid="uid://b876mja774kyd" path="res://PlantNodes/SupportPlants/Nut.cs" id="2_35yo2"]
+[ext_resource type="Texture2D" uid="uid://clyghjete6d1q" path="res://assets/Plants/Nut/NutSprite.png" id="2_f0ly2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_35yo2"]
+radius = 11.75
+
+[sub_resource type="Animation" id="Animation_enxy1"]
+resource_name = "30PercentLeft"
+length = 0.9
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [20, 21, 22]
+}
+
+[sub_resource type="Animation" id="Animation_ptxmj"]
+resource_name = "60PercentLeft"
+length = 1.2
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [13, 14, 15, 16]
+}
+
+[sub_resource type="Animation" id="Animation_qfsf7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_r1vk4"]
+resource_name = "default"
+length = 2.7
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8, 2.1, 2.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 5, 6, 7, 8, 9]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4gwmr"]
+_data = {
+&"30PercentLeft": SubResource("Animation_enxy1"),
+&"60PercentLeft": SubResource("Animation_ptxmj"),
+&"RESET": SubResource("Animation_qfsf7"),
+&"default": SubResource("Animation_r1vk4")
+}
+
+[node name="Nut" instance=ExtResource("1_6uvci")]
+collision_layer = 2
+collision_mask = 16
+script = ExtResource("2_35yo2")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("CapsuleShape2D_35yo2")
+
+[node name="AnimationPlayer" parent="." index="1"]
+libraries = {
+&"": SubResource("AnimationLibrary_4gwmr")
+}
+autoplay = "default"
+
+[node name="Sprite2D" parent="." index="2"]
+texture = ExtResource("2_f0ly2")
+hframes = 23
