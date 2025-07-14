@@ -14,9 +14,6 @@ namespace DECENTRATION3.Empty.Managers
         private readonly PackedScene rainScene;
         CpuParticles2D rain;
 
-        private WaveConfig curentWave;
-
-
         private float passedTime;
         private bool raining;
 

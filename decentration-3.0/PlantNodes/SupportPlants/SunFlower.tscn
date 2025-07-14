@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bcq66afuqks6k" path="res://assets/Plants/Sunflower/SunflowerSunning.png" id="3_6lv8e"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qv15j"]
-size = Vector2(19, 28)
+size = Vector2(7.25, 19)
 
 [sub_resource type="Animation" id="Animation_tm82y"]
 length = 0.001
@@ -157,7 +157,7 @@ collision_mask = 16
 script = ExtResource("2_6lv8e")
 
 [node name="CollisionShape2D" parent="." index="0"]
-position = Vector2(-0.5, 1.5)
+position = Vector2(5.875, 2.25)
 shape = SubResource("RectangleShape2D_qv15j")
 
 [node name="AnimationPlayer" parent="." index="1"]

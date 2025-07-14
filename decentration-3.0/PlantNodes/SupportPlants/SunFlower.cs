@@ -13,7 +13,8 @@ public partial class SunFlower : SupportPlant
 	{
 		base._Ready();
 		rnd = new();
-		_coolDown = 5;
+		Health = 60;
+		_coolDown = 8;
 		_sunScene = GD.Load<PackedScene>("res://PlantNodes/Particles/Resources/Sun.tscn");
 	}
 
@@ -38,5 +39,7 @@ public partial class SunFlower : SupportPlant
         var sun = _sunScene.Instantiate<Area2D>();
 		sun.Position = new Vector2(Position.X + rnd.Next(-50, 50), Position.Y);
 		GetTree().CurrentScene.AddChild(sun);
-	}
+
+		SetDefaultAnimation();
+    }
 }

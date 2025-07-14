@@ -11,12 +11,13 @@ public abstract partial class Bullet : Particle, IAttacker
     protected IDamageable zombie;
     public override void _Ready()
 	{
+        
 	}
 
 	public override void _Process(double delta)
 	{
 		Position = new Vector2(Position.X + Speed * (float)delta, Position.Y);
-		
+        if (Position.X >= 1795) QueueFree();
     }
 
     public void OnBodyEntered(Node2D body)

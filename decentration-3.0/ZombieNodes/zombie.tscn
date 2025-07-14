@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dpeyjvb6h8ki4" path="res://ZombieNodes/Zombie.cs" id="1_yjfqk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_nlw5w"]
+height = 23.0
 
 [node name="zombie" type="CharacterBody2D"]
 position = Vector2(57, 83)

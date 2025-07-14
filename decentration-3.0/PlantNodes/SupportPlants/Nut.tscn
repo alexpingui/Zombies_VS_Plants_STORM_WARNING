@@ -5,7 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://clyghjete6d1q" path="res://assets/Plants/Nut/NutSprite.png" id="2_f0ly2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_35yo2"]
-radius = 11.75
+radius = 4.0
+height = 20.0
 
 [sub_resource type="Animation" id="Animation_enxy1"]
 resource_name = "30PercentLeft"
@@ -90,6 +91,7 @@ collision_mask = 16
 script = ExtResource("2_35yo2")
 
 [node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(8, 1.25)
 shape = SubResource("CapsuleShape2D_35yo2")
 
 [node name="AnimationPlayer" parent="." index="1"]

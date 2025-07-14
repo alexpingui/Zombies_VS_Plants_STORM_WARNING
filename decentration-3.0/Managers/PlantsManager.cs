@@ -1,3 +1,4 @@
+using DECENTRATION3.Empty.PlantNodes.ShootPlant;
 using Godot;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace DECENTRATION3.Empty.Managers
         private static string plantScentPath;
 
         public static bool IsShovelPicked;
+        public static bool IsPlantCardSelected;
 
         public static Dictionary<Vector2, Area2D> plants = [];
 
@@ -44,10 +46,13 @@ namespace DECENTRATION3.Empty.Managers
             plant = plantScene.Instantiate<Area2D>();
             plant.Position = new Vector2(cellPosition.X * 128 + 64, cellPosition.Y * 128 + 32) + groundPosition;
 
+            if (plant is ShootingPlant shootingPlant) shootingPlant.Line = cellPosition.Y;
+
             if (!plants.ContainsKey(plant.Position) && ResourcesManager.TryBuyPlant(plantType))
             {
                 plants.Add(plant.Position, plant);
                 GameManager.Instance.AddChild(plant);
+                IsPlantCardSelected = false;
             }
         }
 
@@ -80,8 +85,6 @@ namespace DECENTRATION3.Empty.Managers
                 plants.Remove(plantPosition);
             }
             IsShovelPicked = false;
-
-            GD.Print("Метод удаления растения вызван");
         }
     }
 

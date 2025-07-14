@@ -15,6 +15,8 @@ namespace DECENTRATION3.Empty.PlantNodes.ShootPlant
         protected int Health { get; set; }
         protected int Damage { get; set; }
         protected double CoolDown { get; set; }
+
+        public int Line { get; set; }
         protected abstract string BulletScenePath { get; }
 
         protected PackedScene bulletScene;
@@ -30,7 +32,7 @@ namespace DECENTRATION3.Empty.PlantNodes.ShootPlant
         {
             base._Process(delta);
 
-            if(timePassed >= CoolDown)
+            if(timePassed >= CoolDown && ZombieManager.zombies.Select(z => z as DefaultZombie).Any(dz => dz != null && dz.Line == this.Line))
             {
                 animationPlayer.Play("Shoot");
                 

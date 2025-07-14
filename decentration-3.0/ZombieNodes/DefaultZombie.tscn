@@ -204,7 +204,7 @@ _data = {
 
 [node name="DefaultZombie" instance=ExtResource("1_jlvjr")]
 collision_layer = 16
-collision_mask = 10
+collision_mask = 138
 script = ExtResource("2_bkoqd")
 
 [node name="AnimationPlayer" parent="." index="0"]
@@ -212,6 +212,9 @@ libraries = {
 &"": SubResource("AnimationLibrary_a6qks")
 }
 autoplay = "Default"
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-2.5, 6.83333)
 
 [node name="DefaultSprite2D" type="Sprite2D" parent="." index="2"]
 texture = ExtResource("2_qlxb2")
@@ -223,6 +226,9 @@ hframes = 16
 
 [node name="HitBox" parent="." index="4"]
 collision_layer = 16
-collision_mask = 10
+collision_mask = 138
+
+[node name="CollisionShape2D" parent="HitBox" index="0"]
+position = Vector2(-2.66667, 6.66667)
 
 [connection signal="area_entered" from="HitBox" to="." method="OnHitBoxAreaEntered"]

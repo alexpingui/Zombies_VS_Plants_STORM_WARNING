@@ -9,7 +9,7 @@ public partial class PeaShooter : ShootingPlant
 	{
 		base._Ready();
 		Health = 100;
-		CoolDown = 5.5;
+		CoolDown = 5;
 	}
 
 	public override void _Process(double delta)

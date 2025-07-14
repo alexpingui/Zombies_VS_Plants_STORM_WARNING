@@ -34,9 +34,11 @@ theme/lcd_subpixel_layout=0
 
 [layer_names]
 
+2d_physics/layer_1="House"
 2d_physics/layer_2="Plants"
 2d_physics/layer_4="Bullets"
 2d_physics/layer_5="Zombies"
+2d_physics/layer_8="LawnMower"
 
 [rendering]
 

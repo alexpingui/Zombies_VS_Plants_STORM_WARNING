@@ -8,19 +8,13 @@ public partial class Nut : SupportPlant
 	public override void _Ready()
 	{
 		base._Ready();
-		TotalHealth = 300;
+		TotalHealth = 500;
 		Health = TotalHealth;
 	}
 
 	public override void _Process(double delta)
 	{
 		base._Process(delta);
-
-		if(timePassed >= 2)
-		{
-			timePassed = 0;
-			TakeDamage(30);
-		}
 
 		if(Health <= TotalHealth / 100 * 60)
 		{

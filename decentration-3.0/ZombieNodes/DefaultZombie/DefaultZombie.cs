@@ -1,19 +1,24 @@
 using DECENTRATION3.Empty.Interfaces;
+using DECENTRATION3.Empty.Managers;
+using DECENTRATION3.Empty.Managers.WaveManager;
 using Godot;
 using System;
 
 public partial class DefaultZombie : Zombie, IAttacker, IDamageable
 {
-	protected float _speed = 50.0f;
-	protected int _health = 300;
+	protected float _speed = 40.0f;
+	protected int _health = 100;
+	protected int _attackCoolDown = 4;
 
-	protected bool isAttacking;
+	public int Line;
+    public virtual int Damage => 40;
+
+    protected bool isAttacking;
 
 	protected AnimationPlayer animationPlayer;
 
     public IDamageable currentDamageablePlant;
 
-	public virtual int Damage => 20;
 
     public override void _Ready()
     {
@@ -37,7 +42,7 @@ public partial class DefaultZombie : Zombie, IAttacker, IDamageable
                 animationPlayer.Play("Default");
             }
 
-            else if (_passedTime >= 5)
+            else if (_passedTime >= _attackCoolDown)
 			{
 				_passedTime = 0;
 				Attack(currentDamageablePlant);
@@ -52,15 +57,17 @@ public partial class DefaultZombie : Zombie, IAttacker, IDamageable
 	{
 		_health -= damage;
 
-		if (_health >= 0)
+		if (_health <= 0)
 		{
-			animationPlayer.Play("Death");
+            Velocity = new Vector2(0, 0);
+            animationPlayer.Play("Death");
 		}
 	}
 	protected void Death()
 	{
+		ZombieManager.zombies.Remove(this);
 		QueueFree();
-	}
+    }
 
     public void Attack(IDamageable damageableBody)
     {

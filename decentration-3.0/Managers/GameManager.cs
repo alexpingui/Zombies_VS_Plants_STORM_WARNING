@@ -1,5 +1,5 @@
 using DECENTRATION3.Empty.Managers;
-using DECENTRATION3.Empty.ZombieNodes;
+using DECENTRATION3.Empty.Managers.WaveManager;
 using Godot;
 using PVZModel.Static.LevelConfig;
 using System;
@@ -12,12 +12,10 @@ public partial class GameManager : Node2D
 
     public static Vector2 MousePosition;
 
-    private static bool _isPlantSelected = false;
     private static PlantType _selectedPlant;
 
     public static WeatherType weather;
 
-    private ZombieManager zombieManager;
     private LevelManager levelManager;
 
     public Inventory inventory;
@@ -28,12 +26,9 @@ public partial class GameManager : Node2D
     {
         Instance = this;
 
-        zombieManager = new ZombieManager(this);
         levelManager = new LevelManager(this);
         weather = WeatherType.Sun;
         groundPosition = GetGroundPosition();
-
-       
 
         inventory = GetNode<Inventory>("Inventory");
         inventory.FillInventory(new List<PlantType>
@@ -47,8 +42,8 @@ public partial class GameManager : Node2D
     public static void SetSelectedPlant(PlantType plant)
     {
         _selectedPlant = plant;
-        GD.Print("Выбрано растение: " + plant);
-        _isPlantSelected = true;
+        PlantsManager.IsPlantCardSelected = true;
+        PlantsManager.IsShovelPicked = false;
     }
 
     public override void _Input(InputEvent eventik)
@@ -59,10 +54,9 @@ public partial class GameManager : Node2D
             {
                 MousePosition = mouseButton.Position;
 
-                if (_isPlantSelected)
+                if (PlantsManager.IsPlantCardSelected)
                 {
                     PlantsManager.CreatePlant(_selectedPlant);
-                    _isPlantSelected = false;
                 }
                 if(PlantsManager.IsShovelPicked)
                 {
@@ -73,8 +67,8 @@ public partial class GameManager : Node2D
     }
     public override void _Process(double delta)
     {
-        levelManager.Process((float)delta);
-        zombieManager.Process((float)delta);
+        //levelManager.Process((float)delta); будет полноценно реализовано позже
+        WaveManager.Process(delta);
     }
 
     private Vector2 GetGroundPosition()
@@ -86,5 +80,10 @@ public partial class GameManager : Node2D
 
         Vector2 groundPosition = new Vector2(groundPosX, groundPosY);
         return groundPosition;
+    }
+
+    public void EndGame()
+    {
+        GetTree().Quit();
     }
 }

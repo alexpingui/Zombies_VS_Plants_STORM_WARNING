@@ -16,7 +16,7 @@ namespace DECENTRATION3.Empty.PlantNodes.SupportPlants
         public void TakeDamage(int damage)
         {
             Health -= damage;
-            
+        
             if(Health <= 0)
             {
                 PlantsManager.plants.Remove(Position);
