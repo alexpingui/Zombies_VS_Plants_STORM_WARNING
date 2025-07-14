@@ -30,9 +30,18 @@ namespace DECENTRATION3.Empty.Managers.WaveManager
             {
                 zombieSpawns =
                 [
-                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 0, Delay = 25 }, // Между волнами 25 сек
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 0, Delay = 15 }, 
                     new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 4, Delay = 12 },
-                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 2, Delay = 12 }
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 2, Delay = 12 },
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 0, Delay = 5 },
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 3, Delay = 5 },
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 4, Delay = 10 },
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 0, Delay = 0 },
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 0, Delay = 1 },
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 1, Delay = 1 },
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 2, Delay = 1 },
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 3, Delay = 0 },
+                    new ZombieSpawnConfig { ZombieType = ZombieType.DefaultZombie, Line = 4, Delay = 1 }
                 ]
             },
 

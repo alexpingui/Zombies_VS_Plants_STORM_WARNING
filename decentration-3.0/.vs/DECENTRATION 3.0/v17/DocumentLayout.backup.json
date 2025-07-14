@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\managers\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:managers\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\managers\\wavemanager\\wavescatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:managers\\wavemanager\\wavescatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\plantnodes\\supportplants\\sunflower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:plantnodes\\supportplants\\sunflower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\plantnodes\\supportplants\\supportplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:plantnodes\\supportplants\\supportplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\plantnodes\\shootplant\\shootingplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:plantnodes\\shootplant\\shootingplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,22 +47,6 @@
       "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:managers\\zombiemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\plantnodes\\supportplants\\sunflower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:plantnodes\\supportplants\\sunflower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\plantnodes\\supportplants\\supportplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:plantnodes\\supportplants\\supportplant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\managers\\wavemanager\\wavescatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:managers\\wavemanager\\wavescatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|c:\\users\\asus\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\alexey\\kasu\\c sharp\\\u043F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\decentration 3.0\\project\\decentration-3.0\\decentration-3.0\\plantnodes\\supportplants\\nut.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{304B6AA5-5A54-4985-8D02-BE616BCD4F6D}|DECENTRATION 3.0.csproj|solutionrelative:plantnodes\\supportplants\\nut.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -54,76 +58,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "LevelManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\LevelManager.cs",
+              "RelativeDocumentMoniker": "Managers\\LevelManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\LevelManager.cs*",
+              "RelativeToolTip": "Managers\\LevelManager.cs*",
+              "ViewState": "AgIAACkAAAAAAAAAAAASwD0AAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T11:57:57.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\GameManager.cs",
               "RelativeDocumentMoniker": "Managers\\GameManager.cs",
               "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\GameManager.cs",
               "RelativeToolTip": "Managers\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADIAAAAAAAAAAAAgwEMAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T11:51:03.895Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WaveManager.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\WaveManager\\WaveManager.cs",
-              "RelativeDocumentMoniker": "Managers\\WaveManager\\WaveManager.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\WaveManager\\WaveManager.cs*",
-              "RelativeToolTip": "Managers\\WaveManager\\WaveManager.cs*",
-              "ViewState": "AgIAACwAAAAAAAAAAAAiwDoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:42:39.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ZombieManager.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\ZombieManager.cs",
-              "RelativeDocumentMoniker": "Managers\\ZombieManager.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\ZombieManager.cs",
-              "RelativeToolTip": "Managers\\ZombieManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:41:26.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlantsManager.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\PlantsManager.cs",
-              "RelativeDocumentMoniker": "Managers\\PlantsManager.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\PlantsManager.cs",
-              "RelativeToolTip": "Managers\\PlantsManager.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAawDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:36:52.731Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ShootingPlant.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\PlantNodes\\ShootPlant\\ShootingPlant.cs",
               "RelativeDocumentMoniker": "PlantNodes\\ShootPlant\\ShootingPlant.cs",
               "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\PlantNodes\\ShootPlant\\ShootingPlant.cs",
               "RelativeToolTip": "PlantNodes\\ShootPlant\\ShootingPlant.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAIA3wCIAAACNAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAAAawCIAAACNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T11:35:21.34Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "SupportPlant.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\PlantNodes\\SupportPlants\\SupportPlant.cs",
               "RelativeDocumentMoniker": "PlantNodes\\SupportPlants\\SupportPlant.cs",
@@ -136,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "DefaultZombie.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\ZombieNodes\\DefaultZombie\\DefaultZombie.cs",
               "RelativeDocumentMoniker": "ZombieNodes\\DefaultZombie\\DefaultZombie.cs",
@@ -144,12 +122,11 @@
               "RelativeToolTip": "ZombieNodes\\DefaultZombie\\DefaultZombie.cs",
               "ViewState": "AgIAADYAAAAAAAAAAAAgwEQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T11:22:18.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T11:22:18.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "PeaShooter.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\PlantNodes\\ShootPlant\\ShootingPlants\\PeaShooter.cs",
               "RelativeDocumentMoniker": "PlantNodes\\ShootPlant\\ShootingPlants\\PeaShooter.cs",
@@ -157,25 +134,73 @@
               "RelativeToolTip": "PlantNodes\\ShootPlant\\ShootingPlants\\PeaShooter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T10:10:24.356Z",
+              "WhenOpened": "2025-07-07T10:10:24.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SunFlower.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\PlantNodes\\SupportPlants\\SunFlower.cs",
+              "RelativeDocumentMoniker": "PlantNodes\\SupportPlants\\SunFlower.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\PlantNodes\\SupportPlants\\SunFlower.cs",
+              "RelativeToolTip": "PlantNodes\\SupportPlants\\SunFlower.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAwBkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T10:11:09.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "WavesCatalog.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\WaveManager\\WavesCatalog.cs",
               "RelativeDocumentMoniker": "Managers\\WaveManager\\WavesCatalog.cs",
               "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\WaveManager\\WavesCatalog.cs",
               "RelativeToolTip": "Managers\\WaveManager\\WavesCatalog.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAqwBUAAABmAAAAAAAAAA==",
+              "ViewState": "AgIAABkAAAAAAAAAAAAawCkAAABpAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-07T10:13:19.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PlantsManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\PlantsManager.cs",
+              "RelativeDocumentMoniker": "Managers\\PlantsManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\PlantsManager.cs",
+              "RelativeToolTip": "Managers\\PlantsManager.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAawDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T11:36:52.731Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "ZombieManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\ZombieManager.cs",
+              "RelativeDocumentMoniker": "Managers\\ZombieManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\ZombieManager.cs",
+              "RelativeToolTip": "Managers\\ZombieManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T11:41:26.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WaveManager.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\WaveManager\\WaveManager.cs",
+              "RelativeDocumentMoniker": "Managers\\WaveManager\\WaveManager.cs",
+              "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\Managers\\WaveManager\\WaveManager.cs",
+              "RelativeToolTip": "Managers\\WaveManager\\WaveManager.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAiwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-07T11:42:39.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Nut.cs",
               "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\PlantNodes\\SupportPlants\\Nut.cs",
               "RelativeDocumentMoniker": "PlantNodes\\SupportPlants\\Nut.cs",
@@ -183,21 +208,7 @@
               "RelativeToolTip": "PlantNodes\\SupportPlants\\Nut.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T10:11:38.033Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SunFlower.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\PlantNodes\\SupportPlants\\SunFlower.cs",
-              "RelativeDocumentMoniker": "PlantNodes\\SupportPlants\\SunFlower.cs",
-              "ToolTip": "C:\\Users\\Asus\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\ALEXEY\\KASU\\C Sharp\\\u041F\u0440\u043E\u0435\u043A\u0442\u0438\u043A\u0438\\DECENTRATION 3.0\\Project\\DECENTRATION-3.0\\decentration-3.0\\PlantNodes\\SupportPlants\\SunFlower.cs",
-              "RelativeToolTip": "PlantNodes\\SupportPlants\\SunFlower.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBAAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T10:11:09.423Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T10:11:38.033Z"
             }
           ]
         }

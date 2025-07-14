@@ -1,5 +1,6 @@
 using DECENTRATION3.Empty.PlantNodes.SupportPlants;
 using Godot;
+using PVZModel.Static.LevelConfig;
 using System;
 
 public partial class SunFlower : SupportPlant
@@ -22,7 +23,7 @@ public partial class SunFlower : SupportPlant
 	{
 		base._Process(delta);
 
-		if(timePassed >= _coolDown)
+		if(timePassed >= _coolDown && GameManager.weather == WeatherType.Sun)
 		{
 			animationPlayer.Play("sunning");
 			timePassed = 0;

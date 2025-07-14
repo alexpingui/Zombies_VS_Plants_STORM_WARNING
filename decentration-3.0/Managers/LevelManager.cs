@@ -8,24 +8,23 @@ using System.Threading.Tasks;
 
 namespace DECENTRATION3.Empty.Managers
 {
-    public class LevelManager
+    public static class LevelManager
     {
-        private readonly Node parentNode;
-        private readonly PackedScene rainScene;
-        CpuParticles2D rain;
+        private static readonly PackedScene rainScene;
+        private static CpuParticles2D rain;
 
-        private float passedTime;
-        private bool raining;
+        private static double passedTime;
+        private static bool raining;
 
-        public LevelManager(Node parentNode)
+        private static bool _isRainCautionShowed = false;
+        static LevelManager()
         {
-            this.parentNode = parentNode;
             rainScene = GD.Load<PackedScene>("res://Rain/rain_animation.tscn");
             rain = rainScene.Instantiate<CpuParticles2D>();
-            parentNode.AddChild(rain);
+            GameManager.Instance.AddChild(rain);
         }
 
-        public void Process(float delta)
+        public static void Process(double delta)
         {
             passedTime += delta;
             if (passedTime >= 10)
@@ -39,17 +38,31 @@ namespace DECENTRATION3.Empty.Managers
             }
         }
 
-        private void Sun()
+        private static void Sun()
         {
             rain.Emitting = false;
             GameManager.weather = WeatherType.Sun;
         }
 
-        private void Rain()
+        private static void Rain()
         {           
             rain.Emitting = true;
             GameManager.weather = WeatherType.Rain;
 
+            if(!_isRainCautionShowed)
+            {
+                _isRainCautionShowed = true;
+
+                PackedScene rainCautionScene = GD.Load<PackedScene>("res://UIElements/Panels/RainCaution.tscn");
+                Node rainCautionNode = rainCautionScene.Instantiate();
+                
+                GameManager.Instance.AddChild(rainCautionNode);
+
+                Vector2 screenSize = GameManager.Instance.GetViewport().GetVisibleRect().Size;
+                Vector2 center = screenSize / 2;
+
+                ((Node2D)rainCautionNode).Position = center;
+            }
         }
     }
 }

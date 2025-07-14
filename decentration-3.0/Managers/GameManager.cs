@@ -16,7 +16,6 @@ public partial class GameManager : Node2D
 
     public static WeatherType weather;
 
-    private LevelManager levelManager;
 
     public Inventory inventory;
 
@@ -26,7 +25,6 @@ public partial class GameManager : Node2D
     {
         Instance = this;
 
-        levelManager = new LevelManager(this);
         weather = WeatherType.Sun;
         groundPosition = GetGroundPosition();
 
@@ -67,7 +65,7 @@ public partial class GameManager : Node2D
     }
     public override void _Process(double delta)
     {
-        //levelManager.Process((float)delta); будет полноценно реализовано позже
+        LevelManager.Process(delta); 
         WaveManager.Process(delta);
     }
 

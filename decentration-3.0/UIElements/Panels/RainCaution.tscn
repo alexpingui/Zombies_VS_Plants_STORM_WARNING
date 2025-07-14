@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://c247qk1km62to"]
+
+[ext_resource type="Texture2D" uid="uid://bsyure2xkjt3q" path="res://assets/UI/panels/panels.png" id="1_cqwhm"]
+[ext_resource type="Script" uid="uid://bayhw11bpqcqv" path="res://UIElements/Panels/RainCaution.cs" id="1_ifpwg"]
+[ext_resource type="Texture2D" uid="uid://4ge4mh6ybe6u" path="res://assets/UI/panels/Close.png" id="3_cfptw"]
+
+[node name="RainCaution" type="Node2D"]
+script = ExtResource("1_ifpwg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_cqwhm")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -159.0
+offset_top = -117.5
+offset_right = -159.0
+offset_bottom = -117.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Внимание!
+Во время дождя подсолнухи не 
+создают солнышки!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="Sprite2D"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -199.0
+offset_top = -117.5
+offset_right = -159.0
+offset_bottom = -77.5
+grow_horizontal = 0
+texture_normal = ExtResource("3_cfptw")
+ignore_texture_size = true
+stretch_mode = 5
+
+[connection signal="pressed" from="Sprite2D/TextureButton" to="." method="CloseButtonPressed"]
